@@ -6,7 +6,7 @@ This extension adds some features for [Solidity](https://soliditylang.org/) to V
 
 ---
 
-**Solidity Helper for Visual Studio Code** can be installed by [using the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity).
+**Solidity Helper for Visual Studio Code** can be installed by [using the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
 
 ## Features
 
