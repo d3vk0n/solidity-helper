@@ -33,7 +33,7 @@
   "publisher": "d3vk0n",
   "repository": "https://github.com/d3vk0n/solidity-helper.git",
   "activationEvents": [
-    "onCommand:extension.solidityHelper"
+    "onCommand:extension.solidityHelper.rm-comments"
   ],
   "main": "./index.js",
   "contributes": {
@@ -55,7 +55,7 @@
     ],
     "keybindings": [
       {
-        "command": "extension.solidityHelper",
+        "command": "extension.solidityHelper.rm-comments",
         "key": "ctrl+l",
         "mac": "cmd+l",
         "when": "editorTextFocus"
@@ -65,7 +65,7 @@
       "editor/context": [
         {
           "when": "editorFocus",
-          "command": "extension.solidityHelper",
+          "command": "extension.solidityHelper.rm-comments",
           "group": "navigation"
         }
       ]
