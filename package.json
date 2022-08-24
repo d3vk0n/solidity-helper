@@ -1,0 +1,74 @@
+{
+  "name": "solidity-helper",
+  "version": "1.0.0",
+  "description": "Solidity helper",
+  "scripts": {
+    "build": "vsce package"
+  },
+  "keywords": [
+    "Solidity",
+    "Ethereum",
+    "EVM",
+    "Polygon",
+    "Comments",
+    "Flattener"
+  ],
+  "author": "Sergey Kononov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.7.12",
+    "@types/vscode": "^1.70.0",
+    "@vscode/test-electron": "^2.1.5",
+    "mocha": "^10.0.0"
+  },
+  "icon": "images/smart-contracts.png",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+		"Formatters"
+	],
+  "publisher": "d3vk0n",
+  "repository": "https://github.com/zhangrenyang/rm-js-comment",
+  "activationEvents": [
+    "onCommand:extension.solidityHelper"
+  ],
+  "main": "./index.js",
+  "contributes": {
+    "configuration": {
+      "title": "solidity-helper",
+      "properties": {
+        "solidityHelper.replacer": {
+          "type": "object",
+          "default": [],
+          "description": "Enter text for replace"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "extension.solidityHelper",
+        "title": "Run solidity cleaner"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.solidityHelper",
+        "key": "ctrl+l",
+        "mac": "cmd+l",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorFocus",
+          "command": "extension.solidityHelper",
+          "group": "navigation"
+        }
+      ]
+    }
+  }
+}
