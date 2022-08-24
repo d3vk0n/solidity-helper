@@ -1,6 +1,6 @@
 const vscode = require('vscode');
 function activate(context) {
-	const disposable = vscode.commands.registerCommand('extension.solidityHelper', function () {
+	const disposable = vscode.commands.registerCommand('extension.solidityHelper.rm-comments', function () {
 		vscode.window.activeTextEditor.edit(editBuilder => {
 			const text = vscode.window.activeTextEditor.document.getText();
 			let code = removeCodeComments(text)
