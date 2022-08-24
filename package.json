@@ -31,7 +31,7 @@
 		"Formatters"
 	],
   "publisher": "d3vk0n",
-  "repository": "https://github.com/zhangrenyang/rm-js-comment",
+  "repository": "https://github.com/d3vk0n/solidity-helper.git",
   "activationEvents": [
     "onCommand:extension.solidityHelper"
   ],
